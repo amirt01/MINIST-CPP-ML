@@ -23,7 +23,7 @@ DataHandler::DataHandler()
 void DataHandler::readFeatureVector(const std::string& path) {
   std::array<uint32_t, 4> header{};  // |MAGIC|NUM IMAGES|ROWSIZE|COLSIZE|
   uint8_t bytes[4];
-  // open the MINIST Database file
+  // open the MNIST Database file
   std::ifstream fin(path, std::ios::in | std::ios::binary);
   // test if the file is open correctly
   if (fin.is_open()) {
@@ -74,7 +74,7 @@ void DataHandler::readFeatureVector(const std::string& path) {
 void DataHandler::readFeatureLabels(const std::string& path) {
   std::array<uint32_t, 2> header{};  // |MAGIC|NUM IMAGES|
   uint8_t bytes[4];
-  // open the MINIST Database file
+  // open the MNIST Database file
   std::ifstream fin(path, std::ios::in | std::ios::binary);
   // test if the file is open correctly
   if (fin.is_open()) {
