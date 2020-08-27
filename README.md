@@ -1,13 +1,13 @@
-# MINIST-CPP-ML
-Application of KNN and KMean algorithm applied to the MINIST database of hand written digits.
+# MNIST-CPP-ML
+Application of KNN and KMean algorithm applied to the MNIST database of hand written digits.
 
 ## About the Data
 TL;DR: The MNIST database of handwritten digits has two sets of data: training and testing. Each database comes with a set of images and a set of labels. The training data set has 60,000 examples, and the test set has 10,000 examples.
 
-All information about the MINIST database can be found at this link: http://yann.lecun.com/exdb/mnist/
+All information about the MNIST database can be found at this link: http://yann.lecun.com/exdb/mnist/
 
 ### Important Details:
-The MINIST database is formatted such that each file has a header, and then is followed by their respective set of images stored in unsigned bytes. In this project, I used this header to validate the file and then store all of the training data in an std::vector. I split up this vector into three separate std::vectors for training, testing, and validating my model. I did not use the test database for this project, but this can easily be added later.
+The MNIST database is formatted such that each file has a header, and then is followed by their respective set of images stored in unsigned bytes. In this project, I used this header to validate the file and then store all of the training data in an std::vector. I split up this vector into three separate std::vectors for training, testing, and validating my model. I did not use the test database for this project, but this can easily be added later.
 
 ## The Algorithms
 I implemented two algorithms for this project, K-Nearest Neighbors (KNN) and K-Means Clustering. For this project, each algorithm is represented by a class that both inherit from a common algorithm virtual base class to make my code cleaner and easier to read.
